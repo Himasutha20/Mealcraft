@@ -21,7 +21,7 @@ print("GEMINI_API_KEY loaded:", bool(GOOGLE_API_KEY))
 print("GEMINI_API_KEY length:", len(GOOGLE_API_KEY) if GOOGLE_API_KEY else 0)
 
 llm = ChatGoogleGenerativeAI(
-    model="gemma-4-31b-it",
+    model="gemini-3.8-flash",
     api_key=GOOGLE_API_KEY,
     temperature=0
 )
