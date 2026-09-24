@@ -17,6 +17,8 @@ from langchain_core.runnables import RunnableLambda
 # =========================================================
 
 GOOGLE_API_KEY = os.environ.get("GEMINI_API_KEY")
+print("GEMINI_API_KEY loaded:", bool(GOOGLE_API_KEY))
+print("GEMINI_API_KEY length:", len(GOOGLE_API_KEY) if GOOGLE_API_KEY else 0)
 
 llm = ChatGoogleGenerativeAI(
     model="gemma-4-31b-it",
