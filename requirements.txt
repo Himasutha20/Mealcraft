@@ -4,6 +4,6 @@ langserve
 langchain
 langchain-core
 langgraph
-langchain-google-genai
+langchain-google-genai==4.4.0
 pydantic
 sse_starlette
