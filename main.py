@@ -64,7 +64,6 @@ Do not suggest ingredients that are difficult to find.
 
 
 @tool
-@tool
 def generate_recipe(meal_name: str, ingredients: str):
     """Generate a simple recipe for a selected meal using available ingredients."""
     
