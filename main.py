@@ -64,21 +64,18 @@ Do not suggest ingredients that are difficult to find.
 
 
 @tool
+@tool
 def generate_recipe(meal_name: str, ingredients: str):
-    """
-    Generate a simple recipe for a selected meal.
-    """
-
+    """Generate a simple recipe for a selected meal using available ingredients."""
+    
     prompt = f"""
 You are MealCraft AI, a practical cooking assistant.
 
-Meal:
-{meal_name}
+Create a simple beginner-friendly recipe.
 
-Available ingredients:
-{ingredients}
+Meal: {meal_name}
 
-Create a simple recipe for this meal.
+Available ingredients: {ingredients}
 
 Provide:
 1. Ingredients required
@@ -88,7 +85,8 @@ Provide:
 
 Use the available ingredients as much as possible.
 If an essential ingredient is missing, clearly mention it.
-Keep the recipe beginner-friendly.
+
+Keep the response concise and practical.
 """
 
     response = llm.invoke(prompt)
